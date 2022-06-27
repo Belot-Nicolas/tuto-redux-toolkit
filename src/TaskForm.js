@@ -9,7 +9,7 @@ const TaskForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    dispatch(addTask(text)) // <= dans redux.js*
+    dispatch(addTask(text)) // <= dans redux.js
     
     setText("");
   };

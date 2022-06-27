@@ -12,7 +12,7 @@ const TaskItem = (props) => {
         <input
           type="checkbox"
           checked={task.done}
-          onChange={() => dispatch(toggleTask(task.id))} // <= toggleTask() est dans redux.js (action creator)
+          onChange={() => dispatch(toggleTask(task.id))} // <= toggleTask() est dans redux.js 
         />
         {task.text}
 

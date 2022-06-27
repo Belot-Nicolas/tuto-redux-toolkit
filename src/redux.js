@@ -11,7 +11,7 @@ const todoSlice = createSlice({
   ],
   reducers: {
     addTask: (state, action) => {
-      // {type: "todo/addTask" (<= a appelé pour utilisé l'action) , PAYLOAD: "aller faire les courses"}
+      // {type: "todo/addTask" , PAYLOAD: "aller faire les courses"}
       const newTask = {
         id: Date.now(),
         done: false,
@@ -32,7 +32,7 @@ const todoSlice = createSlice({
   },
 });
 
-export const { addTask, deleteTask, toggleTask } = todoSlice.actions; // c'est + ou - la const du dessous
+export const { addTask, deleteTask, toggleTask } = todoSlice.actions;
 
 // action creator
 // export const createToggle = (id) => {
